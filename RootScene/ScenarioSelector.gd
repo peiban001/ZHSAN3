@@ -197,5 +197,5 @@ func _on_ArchitectureList_architecture_selected(current_action, current_architec
 
 
 func _on_RandomizeScenario_pressed():
-	$RandomizeScenario.show()
+	$RandomizeScenario.init(_selected_scenario)
 	

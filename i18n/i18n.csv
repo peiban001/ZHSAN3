@@ -264,3 +264,6 @@ UPDATE_ATTACHED_ARMY,"Updated attached Army",編制部曲,編制部曲
 ATTACHED_ARMY_LIST,"Attached Armies List",部曲列表,部曲列表
 ATTACHED_ARMY_TROOP,"Create Troop from Attached Army",部曲出征,部曲出征
 RANDOMIZE_SCENARIO,"Randomize Scenario",随机化剧本,隨機化劇本
+OFFICER_COUNT,"Officer Count",武将数,武將數
+FACTION_COUNT,"Faction Count",势力数,勢力數
+FACTION_OFFICER_COUNT,"Faction Officer Count",每势力武将数,每勢力武將數
