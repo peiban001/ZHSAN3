@@ -70,7 +70,7 @@ func _on_scenario_clicked(node, scen):
 		
 		_selected_scenario = scen
 		$HL/CustomOfficers.disabled = _selected_scenario['__FileName'] == null
-		$HR/Confirm.disabled = _selected_scenario['__FileName'] == null
+		$HR/Confirm.disabled = _selected_scenario['__FileName'] == null or _selected_scenario['Factions'].size() == 0
 
 		SharedData.selected_scenario_start_year = _selected_scenario["GameData"]["Year"]
 		
@@ -94,6 +94,13 @@ func _on_scenario_clicked(node, scen):
 		
 		for a in scen['Architectures']:
 			_all_architectures[int(a['_Id'])] = a
+			
+		$HL/RandomizeScenario.disabled = not 'Randomized' in scen
+	else:
+		_selected_scenario = null
+		$HL/CustomOfficers.disabled = true
+		$HR/Confirm.disabled = true
+		$HL/RandomizeScenario.disabled = true
 		
 		
 func _on_faction_clicked(node, scen, faction):
@@ -186,4 +193,9 @@ func _on_ArchitectureList_architecture_selected(current_action, current_architec
 			_candidates.append(p)
 		
 	$PersonList.select_leader_for_new_faction(_candidates)
+	
+
+
+func _on_RandomizeScenario_pressed():
+	$RandomizeScenario.show()
 	

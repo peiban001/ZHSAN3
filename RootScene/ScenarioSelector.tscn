@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://UIMain/MainTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Fonts/font_header.tres" type="DynamicFont" id=2]
 [ext_resource path="res://RootScene/ScenarioSelector.gd" type="Script" id=3]
 [ext_resource path="res://UIMain/TabList/PersonList.tscn" type="PackedScene" id=4]
 [ext_resource path="res://UIMain/TabList/ArchitectureList.tscn" type="PackedScene" id=5]
+[ext_resource path="res://RootScene/RandomizeScenario.tscn" type="PackedScene" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 0.376471 )
@@ -101,6 +102,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="RandomizeScenario" type="Button" parent="HL"]
+margin_left = 380.0
+margin_right = 610.0
+margin_bottom = 40.0
+disabled = true
+text = "RANDOMIZE_SCENARIO"
+
 [node name="HR" type="HBoxContainer" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
@@ -143,8 +151,12 @@ visible = false
 [node name="PersonList" parent="." instance=ExtResource( 4 )]
 visible = false
 
+[node name="RandomizeScenario" parent="." instance=ExtResource( 6 )]
+visible = false
+
 [connection signal="pressed" from="HL/CustomOfficers" to="." method="_on_CustomOfficers_pressed"]
 [connection signal="pressed" from="HL/NewFactions" to="." method="_on_NewFactions_pressed"]
+[connection signal="pressed" from="HL/RandomizeScenario" to="." method="_on_RandomizeScenario_pressed"]
 [connection signal="pressed" from="HR/Cancel" to="." method="_on_Cancel_pressed"]
 [connection signal="pressed" from="HR/Confirm" to="." method="_on_Confirm_pressed"]
 [connection signal="architecture_selected" from="ArchitectureList" to="." method="_on_ArchitectureList_architecture_selected"]
