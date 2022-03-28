@@ -119,6 +119,32 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label4" type="Label" parent="G"]
+margin_top = 87.0
+margin_right = 194.0
+margin_bottom = 105.0
+text = "FEMALE_CHANCE"
+
+[node name="FemaleChance" type="HSlider" parent="G"]
+margin_left = 198.0
+margin_top = 84.0
+margin_right = 454.0
+margin_bottom = 108.0
+rect_min_size = Vector2( 256, 24 )
+max_value = 1.0
+step = 0.01
+value = 0.1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FemaleChanceText" type="Label" parent="G"]
+margin_left = 458.0
+margin_top = 87.0
+margin_right = 482.0
+margin_bottom = 105.0
+text = "0.1"
+
 [node name="HR" type="HBoxContainer" parent="."]
 anchor_left = 1.0
 anchor_top = 1.0
@@ -149,7 +175,6 @@ margin_right = 249.0
 margin_bottom = 40.0
 grow_horizontal = 0
 grow_vertical = 0
-disabled = true
 text = "CONFIRM"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -158,4 +183,6 @@ __meta__ = {
 [connection signal="value_changed" from="G/OfficerCount" to="." method="_on_OfficerCount_value_changed"]
 [connection signal="value_changed" from="G/FactionCount" to="." method="_on_FactionCount_value_changed"]
 [connection signal="value_changed" from="G/FactionOfficerCount" to="." method="_on_FactionOfficerCount_value_changed"]
+[connection signal="value_changed" from="G/FemaleChance" to="." method="_on_FemaleChance_value_changed"]
 [connection signal="pressed" from="HR/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="HR/Confirm" to="." method="_on_Confirm_pressed"]

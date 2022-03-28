@@ -101,7 +101,7 @@ signal move_complete
 
 func forbidden(x):
 	assert(false)
-
+	
 func object_type():
 	return ScenarioUtil.ObjectType.PERSON
 
@@ -513,6 +513,14 @@ func _set_id(v):
 	
 func _set_gender(v):
 	gender = v
+	
+func _reset_strain():
+	strain = id
+	
+func _set_available_years(available, current_age, longevity):
+	available_year = available
+	born_year = available_year - current_age
+	death_year = born_year + longevity
 
 func get_command():
 	return command + command_exp / 1000

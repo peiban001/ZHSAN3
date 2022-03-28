@@ -32,7 +32,16 @@
 				"Operation": "modify_person_agriculture_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0,
+			"Intelligence": 0.25,
+			"Politics": 0.5,
+			"Glamour": 0.25,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 20,
@@ -67,7 +76,16 @@
 				"Operation": "modify_person_commerce_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0,
+			"Intelligence": 0.5,
+			"Politics": 0.25,
+			"Glamour": 0.25,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 30,
@@ -102,7 +120,16 @@
 				"Operation": "modify_person_morale_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0.25,
+			"Strength": 0.25,
+			"Intelligence": 0,
+			"Politics": 0,
+			"Glamour": 0.5,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 40,
@@ -141,7 +168,16 @@
 				"Operation": "modify_person_endurance_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0.25,
+			"Strength": 0.25,
+			"Intelligence": 0.25,
+			"Politics": 0.25,
+			"Glamour": 0,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 50,
@@ -172,7 +208,16 @@
 				"Operation": "modify_person_recruit_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0.5,
+			"Intelligence": 0,
+			"Politics": 0,
+			"Glamour": 0.5,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 60,
@@ -203,7 +248,16 @@
 				"Operation": "modify_person_training_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0.5,
+			"Strength": 0.5,
+			"Intelligence": 0,
+			"Politics": 0,
+			"Glamour": 0,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 70,
@@ -234,7 +288,16 @@
 				"Operation": "modify_person_produce_equipment_ability",
 				"Value": 0.2
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0,
+			"Intelligence": 0.5,
+			"Politics": 0.5,
+			"Glamour": 0,
+			"AbilityThreshold": 30,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 100,
@@ -269,7 +332,16 @@
 				"Operation": "modify_person_fund_income",
 				"Value": 0.1
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0,
+			"Intelligence": 0.5,
+			"Politics": 0.25,
+			"Glamour": 0.25,
+			"AbilityThreshold": 70,
+			"LevelThreshold": 15
+		}
 	},
 	{
 		"_Id": 110,
@@ -308,7 +380,16 @@
 				"Operation": "modify_person_food_income",
 				"Value": 0.1
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0,
+			"Intelligence": 0.25,
+			"Politics": 0.5,
+			"Glamour": 0.25,
+			"AbilityThreshold": 70,
+			"LevelThreshold": 15
+		}
 	},
 	{
 		"_Id": 115,
@@ -331,7 +412,16 @@
 				"Operation": "modify_person_food_income",
 				"Value": -0.1
 			}
-		]
+		],
+		"Generator": {
+			"Command": 0,
+			"Strength": 0,
+			"Intelligence": 0.25,
+			"Politics": 0.5,
+			"Glamour": 0.25,
+			"AbilityThreshold": -50,
+			"LevelThreshold": 10
+		}
 	},
 	{
 		"_Id": 120,

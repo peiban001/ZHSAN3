@@ -14,6 +14,8 @@ var conditions setget forbidden
 var learn_conditions setget forbidden
 var max_level: int setget forbidden
 
+var generator setget forbidden
+
 func forbidden(x):
 	assert(false)
 
@@ -26,6 +28,15 @@ func load_data(json: Dictionary, objects):
 	influences = json["Influences"]
 	max_level = Util.dict_try_get(json, "MaxLevel", -1)
 	learn_conditions = Util.dict_try_get(json, "LearnConditions", [])
+	generator = Util.dict_try_get(json, "Generator", {
+		"Command": 0,
+		"Strength": 0,
+		"Intelligence": 0, 
+		"Politics": 0,
+		"Glamour": 0,
+		"AbilityThreshold": 100,
+		"LevelThreshold": 100
+	})
 	
 	if max_level <= 0:
 		max_level = 32767
@@ -39,7 +50,8 @@ func save_data() -> Dictionary:
 		"MaxLevel": max_level,
 		"LearnConditions": learn_conditions,
 		"Conditions": conditions,
-		"Influences": influences
+		"Influences": influences,
+		"Generator": generator
 	}
 
 func get_name() -> String:
